@@ -1,6 +1,7 @@
 ## Tensorflow-GPU on ubuntu 18.04 & Remote desktop
 ### 歷經五小時，劫後餘生做個記錄 <br>
 1. [從ubuntu 16.04升級至18.04](https://reurl.cc/R1EAe) <br>
+	- 因為我之前做的隨身碟裡面是16.04，懶得重下載故用升級的 <br>	
 	- 也可不升，但18.04據說有比較猛。<br>
 
 2.	[顯示卡驅動](https://reurl.cc/N6L7n) <br>
