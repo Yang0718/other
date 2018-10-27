@@ -6,7 +6,9 @@
 
 2.	[顯示卡驅動](https://reurl.cc/N6L7n) <br>
 	- [重要]剛灌好ubuntu時，是沒有顯示卡驅動的(看硬體資訊那邊可以發現)，需要自己去安裝。<br>
-	- 顯卡驅動我本來是裝nvidia-390，但後來發現其實要裝396，否則會出問題。歸因於自動安裝好的CUDA版本跟我們自己裝的nvidia驅動版本不相容。<br>
+	- 顯卡驅動我本來是裝nvidia-390，但後來發現其實要裝396，否則會出問題如下。<br>
+	```Internal: cudaGetDevice() failed. Status: CUDA driver version is insufficient for CUDA runtime version```<br>
+	- 歸因於自動安裝好的CUDA版本跟我們自己裝的nvidia驅動版本不相容。<br>
 	- 解決辦法：想辦法把驅動弄成nvidia-396。<br>
 		- 法一：用[軟體與更新]跑更新，之後在[額外驅動程式]手動選396，按完套用後重開機就好。(需要跑一下下)
 		- 法二：<br>
