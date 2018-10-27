@@ -9,17 +9,17 @@
 	- 解決辦法：想辦法把驅動弄成nvidia-396。
 		- 法一：用[軟體與更新]跑更新，之後在[額外驅動程式]手動選396，按完套用後重開機就好。(需要跑一下下)
 		- 法二：<br>
-			```sudo apt purge nvidia*```<br>
-			```sudo add-apt-repository ppa:graphics-drivers/ppa```<br>
-			```sudo apt install nvidia-driver-396```		
+```sudo apt purge nvidia*```<br>
+```sudo add-apt-repository ppa:graphics-drivers/ppa```<br>
+```sudo apt install nvidia-driver-396```		
 
-		註：打nvidia-smi，可以看顯卡當前狀況。
+		- 註：打nvidia-smi，可以看顯卡當前狀況。
 
 3.	[安裝Anaconda, tensorflow-gpu](https://reurl.cc/e87KM)
 	- 跟著此方法是最省事的(不確定windows能不能用)，在```conda install tensorflow-gpu```後，會自動安裝CUDA 9.0 & cuDNN 7.1，能省去下載CUDA, cuDNN以及版本不相容的問題。
 	- 註：python3.7目前會有點問題，保險起見裝好anaconda後記得照文章所說建個3.6的環境
 	- 裝ipykernel，可以更方便的切換kernel。<br>
-<br>
+
 4.	[遠端操控ubuntu](https://reurl.cc/R1EAe)
 	- 必須是固定IP，不能透過分享器。
 	- 照文章所說操作即可用windows跟mac來遠端操控
